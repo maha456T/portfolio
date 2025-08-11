@@ -3,115 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahananda Paik - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #444;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-        .project-card {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #222;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-    </style>
+    <title>Mahananda Paik - Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Mahananda Paik</h1>
-    <p>Web Designer | Programmer (Python, Java, C) | AI Enthusiast</p>
-</header>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">Mahananda Paik</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I’m a passionate Web Designer and Developer with experience creating modern, responsive websites and 
-        functional applications. Skilled in Python, Java, and C, I combine creativity with technical expertise 
-        to deliver high-quality solutions. I also work with AI-based projects to bring smart features to digital products.
-    </p>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm <span>Mahananda Paik</span></h1>
+        <p>Web Designer | AI Enthusiast | Programmer</p>
+        <a href="#contact" class="btn">Let's Connect</a>
+    </section>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Web Design (HTML, CSS, JavaScript)</li>
-        <li>Python, Java, C Programming</li>
-        <li>Responsive & Mobile-Friendly Design</li>
-        <li>AI & Machine Learning Basics</li>
-    </ul>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate Computer Science student specializing in Artificial Intelligence.  
+            Skilled in Python, Java, Web Development, and backend technologies.  
+            I believe in delivering high-quality, impactful work without unnecessary noise.
+        </p>
+        <blockquote>
+            “I don’t need to prove my talent or skills through a portfolio or posts — my work speaks for itself.”
+        </blockquote>
+    </section>
 
-<section>
-    <h2>Projects</h2>
-    <div class="projects">
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Designed a clean, responsive personal portfolio to showcase skills and projects.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>AI Chatbot</h3>
+                <p>An intelligent chatbot using Python & NLP.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Clean, professional personal branding site.</p>
+            </div>
+            <div class="project-card">
+                <h3>Node.js Backend</h3>
+                <p>REST API backend with authentication & CRUD.</p>
+            </div>
         </div>
-        <div class="project-card">
-            <h3>AI Chatbot</h3>
-            <p>Developed a Python-based AI chatbot for customer support automation.</p>
-        </div>
-        <div class="project-card">
-            <h3>College Management System</h3>
-            <p>Built a Java-based management system for handling student records efficiently.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section>
-    <h2>Certificates</h2>
-    <ul>
-        <li>Responsive Web Design – freeCodeCamp</li>
-        <li>Python for Everybody – Coursera</li>
-        <li>Machine Learning – Andrew Ng, Coursera</li>
-    </ul>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Node.js</li>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>MySQL</li>
+        </ul>
+    </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mahanandapaik@example.com">mahanandapaik@example.com</a></p>
-    <p>Fiverr: <a href="https://www.fiverr.com/yourusername" target="_blank">My Fiverr Profile</a></p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:mahanandapaik6@gmail.com">mahanandapaik6@gmail.com</a></p>
+        <form action="mailto:mahanandapaik6@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
 
-<footer>
-    <p>© 2025 Mahananda Paik | All Rights Reserved</p>
-</footer>
+    <footer>
+        <p>© 2025 Mahananda Paik. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
