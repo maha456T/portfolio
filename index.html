@@ -3,92 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahananda Paik - Professional Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Mahananda Paik | Web Designer & AI Developer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #007BFF, #6610f2);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        nav {
+            background: #fff;
+            padding: 1rem;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        nav a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        section {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+        .about, .skills, .contact {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background: #007BFF;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .email {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Navbar -->
     <header>
-        <nav>
-            <div class="logo">Mahananda Paik</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Mahananda Paik</h1>
+        <p>Web Designer | AI & Software Developer | Problem Solver</p>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Hi, I'm <span>Mahananda Paik</span></h1>
-        <p>Web Designer | AI Enthusiast | Programmer</p>
-        <a href="#contact" class="btn">Let's Connect</a>
-    </section>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
         <p>
-            I'm a passionate Computer Science student specializing in Artificial Intelligence.  
-            Skilled in Python, Java, Web Development, and backend technologies.  
-            I believe in delivering high-quality, impactful work without unnecessary noise.
+            I’m a passionate Web Designer and AI Developer with expertise in Python, Java, C, HTML, CSS, JavaScript, and more.
+            My work speaks for itself — I don’t need to showcase a portfolio to prove my capabilities.
+            I have successfully worked on cool and challenging projects involving AI integration, automation, and full-stack development.
+            My goal is to deliver high-quality, visually appealing, and functional solutions tailored exactly to your needs.
         </p>
-        <blockquote>
-            “I don’t need to prove my talent or skills through a portfolio or posts — my work speaks for itself.”
-        </blockquote>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>AI Chatbot</h3>
-                <p>An intelligent chatbot using Python & NLP.</p>
-            </div>
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>Clean, professional personal branding site.</p>
-            </div>
-            <div class="project-card">
-                <h3>Node.js Backend</h3>
-                <p>REST API backend with authentication & CRUD.</p>
-            </div>
+    <section id="skills" class="skills">
+        <h2>Areas of Expertise</h2>
+        <div class="skills-list">
+            <div class="skill">Web Design</div>
+            <div class="skill">HTML/CSS/JS</div>
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C Language</div>
+            <div class="skill">AI Development</div>
+            <div class="skill">Automation Tools</div>
+            <div class="skill">Backend Development</div>
+            <div class="skill">Responsive UI/UX</div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>Node.js</li>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>MySQL</li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:mahanandapaik6@gmail.com">mahanandapaik6@gmail.com</a></p>
-        <form action="mailto:mahanandapaik6@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send</button>
-        </form>
+        <p>If you’re looking for a reliable, skilled, and creative developer for your project, let’s talk!</p>
+        <p>Email: <a class="email" href="mailto:mahanandapaik6@gmail.com">mahanandapaik6@gmail.com</a></p>
     </section>
 
     <footer>
-        <p>© 2025 Mahananda Paik. All rights reserved.</p>
+        &copy; 2025 Mahananda Paik | All Rights Reserved
     </footer>
-
 </body>
 </html>
