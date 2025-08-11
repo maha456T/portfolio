@@ -3,132 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahananda Paik | Web Designer & AI Developer</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #222;
-        }
-        header {
-            background: linear-gradient(90deg, #007BFF, #6610f2);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-top: 0.5rem;
-        }
-        nav {
-            background: #fff;
-            padding: 1rem;
-            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        nav a {
-            color: #007BFF;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 600;
-        }
-        section {
-            padding: 3rem 2rem;
-            max-width: 900px;
-            margin: auto;
-        }
-        .about, .skills, .contact {
-            background: white;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
-        }
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background: #007BFF;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-        footer {
-            background: #222;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        .email {
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            section {
-                padding: 2rem 1rem;
-            }
-        }
-    </style>
+    <title>Mahananda Paik - Web Designer & AI Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Mahananda Paik</h1>
-        <p>Web Designer | AI & Software Developer | Problem Solver</p>
+        <div class="container">
+            <h1>Mahananda Paik</h1>
+            <p class="tagline">Web Designer | AI Developer | Coder</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I’m a passionate Web Designer and AI Developer with expertise in Python, Java, C, HTML, CSS, JavaScript, and more.
-            My work speaks for itself — I don’t need to showcase a portfolio to prove my capabilities.
-            I have successfully worked on cool and challenging projects involving AI integration, automation, and full-stack development.
-            My goal is to deliver high-quality, visually appealing, and functional solutions tailored exactly to your needs.
-        </p>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Areas of Expertise</h2>
-        <div class="skills-list">
-            <div class="skill">Web Design</div>
-            <div class="skill">HTML/CSS/JS</div>
-            <div class="skill">Python</div>
-            <div class="skill">Java</div>
-            <div class="skill">C Language</div>
-            <div class="skill">AI Development</div>
-            <div class="skill">Automation Tools</div>
-            <div class="skill">Backend Development</div>
-            <div class="skill">Responsive UI/UX</div>
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                I’m a passionate Web Designer and AI Developer with expertise in Python, Java, C, 
+                and modern web technologies.  
+                I focus on creating clean, functional, and aesthetically pleasing websites that 
+                connect with people.  
+                I believe real skills are shown through results — not just a portfolio.
+            </p>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>If you’re looking for a reliable, skilled, and creative developer for your project, let’s talk!</p>
-        <p>Email: <a class="email" href="mailto:mahanandapaik6@gmail.com">mahanandapaik6@gmail.com</a></p>
+    <section class="skills">
+        <div class="container">
+            <h2>Expertise</h2>
+            <ul>
+                <li>🌐 Web Design & Development</li>
+                <li>🤖 Artificial Intelligence & Machine Learning</li>
+                <li>💻 Python, Java, C Programming</li>
+                <li>📱 Responsive & Mobile-friendly Designs</li>
+                <li>⚡ Fast, SEO-Optimized Websites</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Let’s work together to bring your vision to life.</p>
+            <p>Email me directly at: <a href="mailto:mahanandapaik6@gmail.com">mahanandapaik6@gmail.com</a></p>
+        </div>
     </section>
 
     <footer>
-        &copy; 2025 Mahananda Paik | All Rights Reserved
+        <p>© 2025 Mahananda Paik. All rights reserved.</p>
     </footer>
 </body>
 </html>
